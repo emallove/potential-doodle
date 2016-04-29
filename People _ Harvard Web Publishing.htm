@@ -1124,14 +1124,14 @@ section#block-boxes-1447690871 {
             console.log(c);
 
             var myHref = b['href'];
-            picBios[i].innerHTML += "<br><a href='" + myHref + "'>Read More</a>";
+            var newHTML = picBios[i].innerHTML + "<a href='" + myHref + "'>Read More</a>";
 
             // Why won't the 'Read More' render here?
-            jQuery(picBios[i]).html(picBios[i].innerHTML);
+            jQuery(picBios[i]).html(newHTML);
 
             // "<br><a href=\"" + myHref + "\">" + Read More + "</a>";
 
-            console.log(picBios[i].innerHTML);
+            console.log(newHTML);
 
             i++;
         });
